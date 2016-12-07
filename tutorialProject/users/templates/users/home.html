@@ -1,0 +1,30 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+{% block content %}
+<div class="home">
+    <div class="welcome cabecero-default">
+        <h1>{% trans "Welcome " %} <b>{{ request.user.first_name}}</h1>
+        <p>{% trans "Welcome message after login" %}: </p>
+    </div>
+    <div class="home-cards">
+        <div class="card-block">
+            <p>{% trans "Card block" %} <a href="#"></a></p>
+            <div class="user-name"><span>{{request.user.first_name}} {{request.user.last_name}}</span></div>
+        </div>
+        <div class="card-block" >
+            <span class="card-text">{% trans "Card Block" %}</span>
+            <strong>{% trans "Last updated " %}</strong>
+        </div>
+        <div class="card-block" id="id_self_assessment">
+            <p>{% trans "Card block" %}<a href="#"></a></p>
+            <span class="card-text">{% trans "Card block" %}</span>
+            <strong>{% trans "Last updated " %}</strong>
+        </div>
+        <div class="card-block">
+            <p>{% trans "Card Block" %} <a href="#"></a></p>
+            <span class="card-text">{% trans "Card block" %}</span>
+        </div>
+    </div>
+</div>
+{% endblock %}

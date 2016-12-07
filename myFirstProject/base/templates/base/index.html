@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+{% load i18n %}
+{% block content %}
+
+<br>
+<h1>{% trans "Welcome to my first project in Django!" %}</h1>
+<br>
+<h1> {% trans "What do you want to see?" %} </h1>
+<h2><a href="{% url 'news_item_list' %}"> {% trans "News Item list" %} </a></h2>
+<h2><a href="{% url 'event_list' %}"> {% trans "Event list" %} </a></h2>
+<h2><a href="{% url 'all' %}"> {% trans "See all" %} </a></h2>
+
+
+{% endblock content %}

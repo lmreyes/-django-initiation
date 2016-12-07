@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/news.css' %}">
+
+{% endblock extra_css %}
+
+{% block content %}
+<div>
+    <h4 class="modal-title" id="myModalLabel">
+        {% trans "Privacy Policy and Legal conditions" %}
+    </h4>
+</div>
+<div class="modal-body">
+    {% lorem 9 p %}
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% load i18n %}
+{% block title-description %}
+    <title>{% trans "Error 404" %}</title>
+    <meta name="description" content="meta-description-example">
+{% endblock %}
+{% block content %}
+    <div class="title">
+        <h1>{% trans "PAGE NOT FOUND" %}</h1>
+        <p>
+          {% url 'login' as go_to_login %}
+          {% blocktrans %}
+          The page that you were looking for was not found. Go back to the <a href="{{ go_to_login }}">homepage</a> or
+          try again.
+          {% endblocktrans %}
+        </p>
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% load i18n %}
+{% load static %}
+<div class="region-footer">
+    <div class="block-social">
+        <a id="id-twitter" href="#">
+            <img src="{% static 'images/ico-twitter.svg' %}">
+        </a>
+        <a id="id-facebook" href="#">
+            <img src="{% static 'images/ico-facebook.svg' %}">
+        </a>
+        <a id="id-youtube" href="#">
+            <img src="{% static 'images/ico-youtube.svg' %}">
+        </a>
+    </div>
+
+    <div class="block-links">
+        <a id="footer-option-1" href="#">
+            {% trans "Footer option #1" %}
+        </a>
+        <a id="footer-option-2" href="#">
+            {% trans "Footer option #2" %}
+        </a>
+        <a id="footer-option-3" href="#">
+            {% trans "Footer option #3" %}
+        </a>
+        <a id="footer-option-4" href="#">
+            {% trans "Footer option #4" %}
+        </a>
+    </div>
+</div>

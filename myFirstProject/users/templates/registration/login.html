@@ -1,0 +1,34 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+{% block content %}
+
+<div class="layout-login">
+    <div class="login">
+        <h1>{% trans "Log in" %}</h1>
+        <form class="test" method="POST" action="{% url 'login' %}" novalidate="novalidate">
+            {% csrf_token %}
+            <p>
+                {% for error in login_form.non_field_errors %}
+                    <ul class="errorlist">
+                        <li>{{ error }}</li>
+                    </ul>
+                {% endfor %}
+                {{ login_form.email.errors}}
+                {{ login_form.email }}
+            </p>
+            <p>
+                {{ login_form.password.errors}}
+                {{ login_form.password }}
+            </p>
+         <span>
+                login<a>{% trans "Forgot my password" %}</a>
+            </span>
+            <button id="id_do_login" type="submit">{% trans "Login" %}</button>
+        </form>
+    </div>
+    <div class="start_button">
+      <a id="id_start_now" href="{% url 'registration_register' %}" class="btn btn-normal">{% trans "Register" %}</a>
+    </div>
+</div>
+{% endblock %}

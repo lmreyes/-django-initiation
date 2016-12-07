@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+{% block extra_js %}
+{%  endblock %}
+{% block content %}
+  <div class="registration-layout">
+    <div class="registration-form-wrapper">
+         <h1>{% trans "Create your account now" %}</h1>
+         <form method="POST" action="{% url 'registration_register' %}" novalidate="novalidate">
+             <div class="registration-form">
+             {% csrf_token %}
+                <div class="registration-left-column">
+                  {% for field in form %}
+                      <div>
+                        {% if field.errors %}
+                            {% for error in field.errors %}
+                                <p class="field-error">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                        {{ field.label_tag }} {{ field }}
+                      </div>
+                  {% endfor %}
+                </div>
+             </div>
+             <h4 class="info">{% trans "Here goes the secure password protocol" %}</h4>
+            <button id="id_register" type="submit" class="btn-registrate">{% trans "Register now" %}</button>
+        </form>
+      </div>
+    </div>
+{% endblock %}

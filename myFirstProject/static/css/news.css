@@ -1,0 +1,45 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Advent+Pro:400,500,600,700");
+
+.my_style{
+    text-align: left;
+    margin: 2% 5% 0% 5%
+}
+
+.date_published{
+    text-align: right;
+}
+
+.date_event{
+    text-align: left;
+}
+
+.enlace-boton {
+    float: left;
+    margin-right: 10px;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 8px;
+    background-color: #7A9DF5;
+    color: #000000;
+    text-decoration: none;
+}
+
+.enlace-boton:link,
+
+.enlace-boton:visited {
+    border-top: 1px solid #cccccc;
+    border-bottom: 2px solid #666666;
+    border-left: 1px solid #cccccc;
+    border-right: 2px solid #666666;
+}
+
+.enlace-boton:hover {
+    border-bottom: 1px solid #cccccc;
+    border-top: 2px solid #666666;
+    border-right: 1px solid #cccccc;
+    border-left: 2px solid #666666;
+}
+
+.post-form {
+    text-align: left !important;
+}

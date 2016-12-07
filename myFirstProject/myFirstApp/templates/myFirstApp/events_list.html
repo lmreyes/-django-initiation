@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/news.css' %}">
+
+{% endblock extra_css %}
+
+{% block content %}
+
+<a href="{% url 'index' %}" style="float: left;"> < {% trans "Come back" %}</a>
+<br>
+
+<h1>{% trans "Events" %}</h1>
+
+<ul>
+    {% for event in events.all %}
+    <a href="{% url 'event_detail' event.pk %}" > {{ event.title }} </a>
+    <br />
+    <br />
+    {% endfor %}
+</ul>
+
+<div class="link-form">
+    <a class="enlace-boton" href="{% url 'create_event' %}"> {% trans "Create news event" %} </a>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-30 17:55+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: base/context_processors.py:4
+msgid "Start"
+msgstr "Inicio"
+
+#: base/context_processors.py:7
+msgid "Landing"
+msgstr ""
+
+#: base/templates/404.html:4
+msgid "Error 404"
+msgstr "Error 404"
+
+#: base/templates/404.html:9
+msgid "PAGE NOT FOUND"
+msgstr "PAGINA NO ENCONTRADA"
+
+#: base/templates/404.html:12 base/templates/500.html:12
+#, python-format
+msgid ""
+"\n"
+"          The page that you were looking for was not found. Go back to the "
+"<a href=\"%(go_to_login)s\">homepage</a> or\n"
+"          try again.\n"
+"          "
+msgstr ""
+
+#: base/templates/500.html:4
+msgid "Error 500"
+msgstr ""
+
+#: base/templates/500.html:9
+msgid "SERVER ERROR"
+msgstr ""
+
+#: base/templates/base/base.html:9
+msgid "base title"
+msgstr ""
+
+#: base/templates/base/base.html:65 users/templates/registration/login.html:8
+msgid "Log in"
+msgstr "Acceder"
+
+#: base/templates/base/base.html:82 users/templates/registration/login.html:25
+msgid "Forgot my password"
+msgstr "Olvidé mi contraseña"
+
+#: base/templates/base/base.html:84 base/templates/base/base_header.html:53
+#: users/templates/registration/login.html:27
+msgid "Login"
+msgstr "Login"
+
+#: base/templates/base/base_footer.html:18
+msgid "Footer option #1"
+msgstr ""
+
+#: base/templates/base/base_footer.html:21
+msgid "Footer option #2"
+msgstr ""
+
+#: base/templates/base/base_footer.html:24
+msgid "Footer option #3"
+msgstr ""
+
+#: base/templates/base/base_footer.html:27
+msgid "Footer option #4"
+msgstr ""
+
+#: base/templates/base/base_header.html:3
+msgid "My app"
+msgstr "Mi aplicación"
+
+#: base/templates/base/base_header.html:9 base/templates/base/index.html:7
+msgid "News Item list"
+msgstr "Lista de articulos"
+
+#: base/templates/base/base_header.html:12 base/templates/base/index.html:8
+msgid "Event list"
+msgstr "Lista de eventos"
+
+#: base/templates/base/base_header.html:15 base/templates/base/index.html:9
+msgid "See all"
+msgstr "Ver todo"
+
+#: base/templates/base/base_header.html:40
+msgid "Personal menu #1"
+msgstr ""
+
+#: base/templates/base/base_header.html:41
+msgid "Personal menu #2"
+msgstr ""
+
+#: base/templates/base/base_header.html:47
+msgid "Don't have an account yet?"
+msgstr "¿No tienes una cuenta todavía?"
+
+#: base/templates/base/base_header.html:49
+#: users/templates/registration/login.html:31
+msgid "Register"
+msgstr "Registrate"
+
+#: base/templates/base/base_without_header.html:8
+msgid "Title"
+msgstr "Titulo"
+
+#: base/templates/base/base_without_header.html:26
+msgid "Header title"
+msgstr "Título del header"
+
+#: base/templates/base/index.html:5
+msgid "Welcome to my first project in Django!"
+msgstr "¡Bienvenido a mi primer proyecto en Django!"
+
+#: base/templates/base/index.html:6
+msgid "What do you want to see?"
+msgstr "¿Qué deseas ver?"
+
+#: base/utils.py:20 base/utils.py:26
+msgid "The public url is available."
+msgstr ""
+
+#: base/utils.py:23
+msgid "The public url is taken."
+msgstr ""
+
+#: base/utils.py:37
+msgid "The password is correct."
+msgstr ""
+
+#: base/utils.py:40
+msgid "The password is invalid."
+msgstr ""
+
+#: myFirstApp/templates/myFirstApp/event_detail.html:17
+#: myFirstApp/templates/myFirstApp/events_list.html:14
+#: myFirstApp/templates/myFirstApp/news_item_detail.html:17
+msgid "Come back"
+msgstr "Volver"
+
+#: myFirstApp/templates/myFirstApp/event_detail.html:21
+msgid "Start Date"
+msgstr "Fecha inicio"
+
+#: myFirstApp/templates/myFirstApp/event_detail.html:21
+msgid "End Date"
+msgstr "Fecha fin"
+
+#: myFirstApp/templates/myFirstApp/event_detail.html:23
+#: myFirstApp/templates/myFirstApp/news_item_detail.html:23
+msgid "Edit"
+msgstr "Editar"
+
+#: myFirstApp/templates/myFirstApp/event_detail.html:24
+#: myFirstApp/templates/myFirstApp/news_item_detail.html:24
+msgid "Delete"
+msgstr "Eliminar"
+
+#: myFirstApp/templates/myFirstApp/event_edit.html:14
+#, fuzzy
+#| msgid "Create news event"
+msgid "New event"
+msgstr "Crear nuevo evento"
+
+#: myFirstApp/templates/myFirstApp/event_edit.html:18
+#: myFirstApp/templates/myFirstApp/news_item_edit.html:17
+msgid "Save"
+msgstr "Guardar"
+
+#: myFirstApp/templates/myFirstApp/event_edit.html:21
+#: myFirstApp/templates/myFirstApp/news_item_edit.html:18
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: myFirstApp/templates/myFirstApp/events_list.html:17
+msgid "Events"
+msgstr "Eventos"
+
+#: myFirstApp/templates/myFirstApp/events_list.html:28
+msgid "Create news event"
+msgstr "Crear nuevo evento"
+
+#: myFirstApp/templates/myFirstApp/news_item_list.html:17
+msgid "News items"
+msgstr "Articulos"
+
+#: myFirstApp/templates/myFirstApp/news_item_list.html:28
+msgid "Create news item"
+msgstr "Crear nueva noticia"
+
+#: myFirstApp/templates/myFirstApp/privacy-policy.html:15
+msgid "Privacy Policy and Legal conditions"
+msgstr ""
+
+#: users/forms.py:21
+msgid "YOUR MAIL"
+msgstr ""
+
+#: users/forms.py:23
+msgid "YOUR PASSWORD"
+msgstr ""
+
+#: users/forms.py:38 users/forms.py:42 users/forms.py:44
+msgid "Sorry, that login was invalid. Please try again."
+msgstr ""
+
+#: users/models.py:34
+msgid "Photo"
+msgstr ""
+
+#: users/models.py:37
+msgid "Country"
+msgstr ""
+
+#: users/models.py:38
+msgid "email address"
+msgstr ""
+
+#: users/models.py:39
+msgid "Preferred Language"
+msgstr ""
+
+#: users/templates/registration/activation_complete.html:8
+msgid "Congratulations, you account is now active!"
+msgstr ""
+
+#: users/templates/registration/activation_email.txt:3
+msgid "This is the activation account email for your account"
+msgstr ""
+
+#: users/templates/registration/activation_email.txt:5
+msgid "Your activation code is"
+msgstr ""
+
+#: users/templates/registration/activation_email.txt:5
+msgid "and is available for"
+msgstr ""
+
+#: users/templates/registration/activation_email.txt:5
+msgid "days"
+msgstr ""
+
+#: users/templates/registration/activation_email_subject.txt:2
+msgid "Activation account email"
+msgstr ""
+
+#: users/templates/registration/registration_complete.html:6
+msgid "We have sent you an email to validate the account."
+msgstr ""
+
+#: users/templates/registration/registration_form.html:9
+msgid "Create your account now"
+msgstr ""
+
+#: users/templates/registration/registration_form.html:26
+msgid "Here goes the secure password protocol"
+msgstr ""
+
+#: users/templates/registration/registration_form.html:27
+msgid "Register now"
+msgstr ""
+
+#: users/templates/users/home.html:7
+msgid "Welcome "
+msgstr ""
+
+#: users/templates/users/home.html:8
+msgid "Welcome message after login"
+msgstr ""
+
+#: users/templates/users/home.html:12 users/templates/users/home.html:20
+#: users/templates/users/home.html:21 users/templates/users/home.html:26
+msgid "Card block"
+msgstr ""
+
+#: users/templates/users/home.html:16 users/templates/users/home.html:25
+msgid "Card Block"
+msgstr ""
+
+#: users/templates/users/home.html:17 users/templates/users/home.html:22
+msgid "Last updated "
+msgstr ""

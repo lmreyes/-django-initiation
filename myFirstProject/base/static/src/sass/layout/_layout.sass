@@ -1,0 +1,86 @@
+html,
+body
+  min-height: 100vh
+
+html
+  background: $blue
+main
+  min-height: 400px
+
+body
+  color: $color-body
+  background-color: $white
+
+// Add border to all region when "show region mode" is activated (See theme aparience to know more).
+// -----------------------------------------------------------------------------------------------//
+
+.border-region
+  .region, main
+    outline: 3px violet groove
+
+
+// Base layout: Header, main content, footer..
+//-------------------------------------------------------//
+
+.layout-container
+
+  // Header
+  header
+    > .region
+      +container(91.407%)
+      +padding-container(100%, 2%)
+
+  // Main navigation
+  .region-primary-menu,
+  .region-highlighted
+    +container(91.407%)
+    +padding-container(100%, 2%)
+
+  // Main content
+  main
+    +clearfix
+    +padding-container(100%, 2%)
+
+  // Footer
+  footer
+    .region-footer
+      +container(91.407%)
+      +clearfix
+      +padding-container(100%, 2%)
+
+
+// Dynamic main content
+
+.layout
+  &-one-sidebar
+    &.layout-sidebar-first
+      .layout-content
+        +breakpoint($medium)
+          +span(9 of 12 last)
+      .layout-sidebar-first
+        +breakpoint($medium)
+          +span(3 of 12 first)
+  &-one-sidebar
+    &.layout-sidebar-second
+      .layout-content
+        +breakpoint($medium)
+          +span(9 of 12 first)
+      .layout-sidebar-second
+        +breakpoint($medium)
+          +span(3 of 12 last)
+  &-two-sidebars
+    .layout-content
+      +breakpoint($medium)
+        +span(9 of 12 last)
+      +breakpoint($large)
+        +span(isolate 6 at 4 of 12)
+    .layout-sidebar-first
+      +breakpoint($medium)
+        +span(3 of 12 first)
+    .layout-sidebar-second
+      +breakpoint($medium)
+        clear: both
+        float: none
+      +breakpoint($large)
+        +span(3 of 12 last)
+        clear: none

@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/news.css' %}">
+
+{% endblock extra_css %}
+
+{% block content %}
+
+    <h1>{% trans "New event" %}</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+
+        <button class="enlace-boton" type="submit" >{% trans "Save" %}</button>
+    </form>
+
+    <button class="enlace-boton" type="reset"> <a href="{% url 'event_list' %}">{% trans "Cancel" %}</a></button>
+
+{% endblock content %}

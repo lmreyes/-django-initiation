@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/news.css' %}">
+
+{% endblock extra_css %}
+
+{% block content %}
+
+<!-- Crear un CRUD para el model NewsItem con vistas basadas en funciones. Todas las URLs de estas vistas empezarán con el prefijo "/v1/". -->
+<div class="my_style">
+
+    <a href="{% url 'event_list' %}"> < {% trans "Come back" %}</a>
+
+    <h2>{{ event.title }}</h2>
+    <p>{{ event.description }}</p>
+    <p class="date_event"> <b>{% trans "Start Date" %}: </b>{{ event.start_date }}<b> <br>{% trans "End Date" %}: </b>{{ event.end_date }}</p>
+
+    <a class="enlace-boton" href="{% url 'edit_event' event.pk %}"> {% trans "Edit" %} </a>
+    <a class="enlace-boton" href="{% url 'delete_event' event.pk %}"> {% trans "Delete" %} </a>
+
+</div>
+
+{% endblock %}

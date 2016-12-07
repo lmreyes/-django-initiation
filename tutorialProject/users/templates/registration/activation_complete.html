@@ -1,0 +1,10 @@
+{% extends 'base/base_without_header.html' %}
+{% load staticfiles %}
+{% load i18n %}
+{% block extra_js %}
+{%  endblock %}
+{% block content %}
+  <div class="activation-complete-layout">
+    {% trans 'Congratulations, you account is now active!' %}
+  </div>
+{% endblock %}
